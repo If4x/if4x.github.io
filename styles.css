@@ -64,7 +64,7 @@ padding: 5px 0 0 10px;
 li.header:after {
 content: " | ";
 }
-li.header:last-child:after {
+li.header.big-display:nth-child(6):after {
 content: "";
 }
 li.logo:after {
