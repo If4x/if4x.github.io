@@ -125,7 +125,7 @@ h1 {
 
 p.content {
   text-align: center;
-  padding: 0;
+  padding: 0 0 10px 0;
   margin: 0;
 }
 
