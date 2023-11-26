@@ -171,6 +171,13 @@ footer {
   li:last-child {
     padding: 5px 0 10px 0;
   }
+  li:last-child:after{
+    content: "";
+  }
+  
+  li:nth-child(10):after {
+    content: "";
+  }
   li.logo.samll-display {
     float: none;
     margin: 10px 0 0 0;
