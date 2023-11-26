@@ -73,38 +73,18 @@ content: "";
 /* ALIGN COLUMN DIVs with class "column" HORIZONTALLY */
 .row {
   display: flex;
-  flex-wrap: wrap;
-  padding: 25px;
+  justify-content: space-between;
 }
 
 .column {
-  position: relative;
-  text-align: center;
-  flex: 1;
-  min-width: 0;
-  max-width: 100%;
+  width: 33.33%;
   height: 250px;
-  overflow: hidden;
-  color: #d42828;
-  margin: 5px;
+  transition: width 1s;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
-
-
-.column .description {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: transparent
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 
 .column img {
   height: 100%;
@@ -114,36 +94,14 @@ content: "";
 }
 
 
-
 /* ZOOM EFFECT */
-.zoom {
-  transition: transform .3s ease; /* Animation */
-  margin: 0 auto;
-}
 .column:hover {
-  transform: scale(1.1);
-  .description {
-    /* slowly appear*/
-    color: #fffcf2ff;
-    background-color: rgba(0, 0, 0, 0.654);
-    transition: color 1s ease;
-    opacity: 1;
-    /* background as big as image*/
-    width: 100%;
-    height: 115%;
-    /* center the text in the column */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* center the text in the column */
-    text-align: center;
-    /* vertically center the text in the column */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  width: 75%;
+  .column:not(:hover) {
+    width: 25%;
   }
 }
+
 
 .column a {
   text-decoration: none;
@@ -158,10 +116,7 @@ content: "";
 
 
 
-
-
-
-
+/* FOOTER */
 footer {
     /* background-color: #ea1515; */
     margin-top: auto;
