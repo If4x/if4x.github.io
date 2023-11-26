@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="Layer_1"
+   data-name="Layer 1"
+   viewBox="0 0 1884.9874 1181.7446"
+   version="1.1"
+   sodipodi:docname="programming_index.svg"
+   width="49.873627cm"
+   height="31.267cm"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview31"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="0.088007157"
+     inkscape:cx="778.34579"
+     inkscape:cy="426.10171"
+     inkscape:window-width="1440"
+     inkscape:window-height="830"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="Layer_1"
+     inkscape:document-units="cm" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+      .cls-1 {
+        fill: #256eff;
+        font-family: JetBrainsMono-Bold, 'JetBrains Mono';
+        font-size: 72px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.1em;
+      }
+    </style>
+  </defs>
+  <text
+     class="cls-1"
+     transform="rotate(-30)"
+     id="text28"
+     x="-395.0567"
+     y="565.85803"><tspan
+       class="cls-2"
+       x="-395.0567"
+       y="565.85803"
+       id="tspan8" /><tspan
+       x="-395.0567"
+       y="652.258"
+       xml:space="preserve"
+       id="tspan10">           #include &lt;iostream&gt;          </tspan><tspan
+       x="-395.0567"
+       y="825.05804"
+       id="tspan12">header {background-color: #042069}</tspan><tspan
+       x="-395.0567"
+       y="997.85822"
+       xml:space="preserve"
+       id="tspan14">         for (int i=0; i&lt;math.pi; i++) {}</tspan><tspan
+       x="-395.0567"
+       y="1170.658"
+       xml:space="preserve"
+       id="tspan16">                while item in database:</tspan><tspan
+       x="-395.0567"
+       y="1343.458"
+       xml:space="preserve"
+       id="tspan18">           &lt;div class=’selection’&gt; </tspan><tspan
+       x="-395.0567"
+       y="1429.858"
+       xml:space="preserve"
+       id="tspan20">     </tspan><tspan
+       x="-395.0567"
+       y="1516.2581"
+       xml:space="preserve"
+       id="tspan22">                 print(’Imanuel Fehse’)</tspan><tspan
+       class="cls-2"
+       x="-395.0567"
+       y="1602.6581"
+       id="tspan24" /><tspan
+       x="-395.0567"
+       y="1689.058"
+       xml:space="preserve"
+       id="tspan26">                        int a = 9.81</tspan></text>
+</svg>
