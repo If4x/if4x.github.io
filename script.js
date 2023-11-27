@@ -18,3 +18,9 @@ $(ele).hide().appendTo('.typewriter-text').each(function (i) {
 
 // Ensure the parent container respects line breaks
 $('.typewriter-text').parent().css('white-space', 'pre-line');
+
+
+// GALLERY
+//load images from foldervar folder = "images/";
+
+// see html of gallery, local JS

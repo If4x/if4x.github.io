@@ -9,6 +9,9 @@
 
 </head>
 <body>
+
+
+    <!-- NAV -->
     <nav class="index-nav">
         <ul class="header">
             <!-- Big screen -->
@@ -27,35 +30,75 @@
             <li class="header samll-display"><a href="engineering.html">Engineering</a></li>
             <li class="header samll-display"><a href="about.html">About Me</a></li>
         </ul>
-
-        <!-- 3 column section -->
-
-        <div class="row">
-            <div class="column left zoom">
-                <img src="../images/coding/coding_index.jpg" alt="Picture of a screen with HTML code" height="250px">
-                <p class="description"><a href="../pages/coding.html"></a></p>
-            </div>
-            <div class="column middle zoom">
-                <img src="../images/photography/Wake_Up.jpg" alt="Image of a person, water dropping in their face. This artwork is calles 'Wake Up!'" height="250px">
-                <p class="description"><a href="../pages/gallery.html"></a></p>
-            </div>
-            <div class="column right zoom">
-                <img src="../images/engineering/engineering index.png" alt="Picture of a PCB designed in CAD" height="250px">
-                <p class="description"><a href="../pages/engineering.html"></a></p>
-            </div>
-        </div>
-
     </nav>
 
-    <div class="content typewriter">
+    <!-- 3 column section -->
+    <!-- <div class="row">
+        <div class="column left zoom">
+            <img src="../images/photography/Spin.jpg" alt="Image of Lightpainting looking like orgits. This artwork is calles 'Spin'" height="250px">
+            <p class="description"></a></p>
+        </div>
+        <div class="column middle zoom">
+            <img src="../images/photography/Natural Colors.png" alt="Image of a very colorful leaf. This artwork is calles 'Natural Colors?'" height="250px">
+            <p class="description"></p>
+        </div>
+        <div class="column right zoom">
+            <img src="../images/photography/Wake_Up.jpg" alt="Image of a person, water dropping in their face. This artwork is calles 'Wake Up!'" height="250px">
+            <p class="description"></p>
+        </div>
+    </div> -->
+
+    <!-- CONTENT OF THE PAGE -->
+    <div class="content">
         <h1>Photography</h1>
-        <p class="content">Content here</p>
+        <p class="content gallery"></p>
     </div>
 
     <footer>
-        <p>&copy; Imanuel Fehse | 2023</p>
+        <p><img src="../images/logo_white.svg" alt="Logo" height="10px"> &copy; Imanuel Fehse | 2023</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../script.js"></script>
+    <!-- BUILD ENTRYS -->
+    <script>
+        var folder = "../images/photography/page";
+        var folder = "../images/photography/page";
+
+    $.ajax({
+        url: folder,
+        success: function (data) {
+            $(data).find("a").attr("href", function (i, val) {
+                if (val.match(/\.(jpe?g|png|gif)$/)) {
+                    // Construct the image URL
+                    var imageUrl = val;
+
+                    // Make an AJAX request to load the content of the corresponding .txt file
+                    $.ajax({
+                        url: val.replace(/\.(jpe?g|png|gif)$/, ".txt"),
+                        success: function (txtData) {
+                            var Text = txtData.trim().split("\n"); // Trim to remove leading and trailing spaces
+
+                            // Append the image with alt text
+                            $(".gallery.content").append("<div class='gallery entry'><div class='image-container'><img src=" + val + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text.splice(2) + " </p></div></div>");
+                        },
+                        error: function (err) {
+                            console.error("Error loading .txt file:", err);
+                        }
+                    });
+                }
+            });
+        }
+    });
+    </script>
+    <style>
+        div.content {
+            margin-top: 90px;
+        }
+        @media screen and (max-width: 600px) {
+            div.content {
+                margin-top: 150px;
+            }
+        }
+    </style>
 </body>
 </html>
