@@ -22,7 +22,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload generator folder
-          path: 'data'
+          path: 'images/photography/page'
 
   deploy:
     needs: pages-directory-listing
