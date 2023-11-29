@@ -32,26 +32,10 @@
         </ul>
     </nav>
 
-    <!-- 3 column section -->
-    <!-- <div class="row">
-        <div class="column left zoom">
-            <img src="../images/photography/Spin.jpg" alt="Image of Lightpainting looking like orgits. This artwork is calles 'Spin'" height="250px">
-            <p class="description"></a></p>
-        </div>
-        <div class="column middle zoom">
-            <img src="../images/photography/Natural Colors.png" alt="Image of a very colorful leaf. This artwork is calles 'Natural Colors?'" height="250px">
-            <p class="description"></p>
-        </div>
-        <div class="column right zoom">
-            <img src="../images/photography/Wake_Up.jpg" alt="Image of a person, water dropping in their face. This artwork is calles 'Wake Up!'" height="250px">
-            <p class="description"></p>
-        </div>
-    </div> -->
-
     <!-- CONTENT OF THE PAGE -->
     <div class="content">
         <h1>Photography</h1>
-        <p class="content gallery"></p>
+        <p class="content gallery">All images displayed here are subject to copyright.<br>&copy; 2023 Imanuel Fehse</p>
     </div>
 
     <footer>
@@ -64,30 +48,32 @@
     var folder = "../images/photography/page";
 
     $.ajax({
-        url: folder,
+        url: folder + "/files.txt",
         success: function (data) {
-            $(data).find("a").attr("href", function (i, val) {
-                if (val.match(/\.(jpe?g|png|gif)$/)) {
-                    // Construct the image URL
-                    var imageUrl = val;
+            var filenames_images = data.split("\n");
 
-                    // Make an AJAX request to load the content of the corresponding .txt file
+            for (var i = 0; i < filenames_images.length; i++) {
+                var imageUrl = folder + "/" + filenames_images[i].replace("\r", "");
+                var text_file_name = folder + "/" + filenames_images[i].replace("\r", "").replace(/\.(jpe?g|png|gif)$/, ".txt");
+
+                // Use a closure to capture the current imageUrl
+                (function (currentImageUrl) {
                     $.ajax({
-                        url: val.replace(/\.(jpe?g|png|gif)$/, ".txt"),
+                        url: text_file_name,
                         success: function (txtData) {
-                            var Text = txtData.trim().split("\n"); // Trim to remove leading and trailing spaces
-
-                            // Append the image with alt text
-                            $(".gallery.content").append("<div class='gallery entry'><div class='image-container'><img src=" + val + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text.splice(2) + " </p></div></div>");
+                            var Text = txtData.trim().split("\n");
+                            $(".gallery.content").append("<div class='gallery entry'><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div></div>");
                         },
                         error: function (err) {
                             console.error("Error loading .txt file:", err);
                         }
                     });
-                }
-            });
+                })(imageUrl);
+            }
+        },
+        error: function (err) {
+            console.error("Error loading files.txt:", err);
         }
-        
     });
     </script>
     <style>
