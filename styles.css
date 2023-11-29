@@ -1,16 +1,17 @@
+/* WHOLE HTML */
 body {
-    background-color: #000000;
-    color: #fffcf2ff;
-    font-family: 'Playfair Display', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
+  background-color: #000000;
+  color: #fffcf2ff;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
 
-    /* ensure that footer is at the bottom of the screen */
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  /* ensure that footer is at the bottom of the screen */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 
 }
 
@@ -35,11 +36,10 @@ nav.index-nav {
   width: 100%;
 }
 ul.header {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    /* background-color: #fffcf2ff; */
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
 }
 li {
   color: #fffcf2ff;
@@ -56,24 +56,24 @@ li a {
 }
 
 li.header a:hover { 
-color: rgb(168, 166, 160)
+  color: rgb(168, 166, 160)
 }
 li.logo:hover a {
-border-radius: 0px;
+  border-radius: 0px;
   border: 1px solid #000000;
 }
 li.logo {
-float: left;
-padding: 5px 0 0 10px;
+  float: left;
+  padding: 5px 0 0 10px;
 }
 li.header:after {
-content: " | ";
+  content: " | ";
 }
 li.header.big-display:nth-child(6):after {
-content: "";
+  content: "";
 }
 li.logo:after {
-content: "";
+  content: "";
 }
 
 
@@ -141,10 +141,6 @@ p.content {
   padding: 0 20px 10px 20px;
   margin: 0;
 }
-p.content.gallery {
-  padding: 0 5% 0 0;
-  margin: 0;
-}
 
 h2 {
   font-size: 18px;
@@ -166,28 +162,7 @@ footer {
 }
 
 
-/* GALLERY ENTRIES */
-div.gallery.entry {
-  margin: 0;
-  padding: 10px 0 10px 0;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-div.gallery.entry div.image-container {
-  width: 70%;
-}
-div.gallery.entry div.image-container img{
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-div.gallery.entry div.text-container {
-  width: 30%;
-  align-items: center;
-}
+
 
 
 /* MEDIA QUERIES */
@@ -214,7 +189,6 @@ div.gallery.entry div.text-container {
   li:last-child:after{
     content: "";
   }
-  
   li:nth-child(10):after {
     content: "";
   }
@@ -222,7 +196,6 @@ div.gallery.entry div.text-container {
     float: none;
     margin: 10px 0 0 0;
     }
-  /* putt all header elements in 2nd line */
   li.logo.samll-display {
     display: block;
     padding: 0;
@@ -260,28 +233,5 @@ div.gallery.entry div.text-container {
       width: 100%;
       height:50px;
     }
-  }
-
-  /* GALLERY ENTRIES */
-  div.gallery.entry {
-    margin: 0;
-    padding: 10px 0 10px 0;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  div.gallery.entry div.image-container {
-    width: 100%;
-  }
-  div.gallery.entry div.image-container img{
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  div.gallery.entry div.text-container {
-    width: 100%;
-    align-items: center;
   }
 }

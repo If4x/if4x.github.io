@@ -6,9 +6,12 @@
     <title>Imanuel Fehse</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair%20Display">
-
+    <link rel="stylesheet" href="../engineering.css">
 </head>
 <body>
+
+
+    <!-- NAV -->
     <nav class="index-nav">
         <ul class="header">
             <!-- Big screen -->
@@ -29,25 +32,10 @@
         </ul>
     </nav>
 
-    <!-- 3 column section -->
-    <div class="row">
-        <div class="column left zoom">
-            <img src="../images/photography/Spin.jpg" alt="Image of Lightpainting looking like orgits. This artwork is calles 'Spin'" height="250px">
-            <p class="description"></a></p>
-        </div>
-        <div class="column middle zoom">
-            <img src="../images/photography/Natural Colors.png" alt="Image of a very colorful leaf. This artwork is calles 'Natural Colors?'" height="250px">
-            <p class="description"></p>
-        </div>
-        <div class="column right zoom">
-            <img src="../images/photography/Wake_Up.jpg" alt="Image of a person, water dropping in their face. This artwork is calles 'Wake Up!'" height="250px">
-            <p class="description"></p>
-        </div>
-    </div>
-
+    <!-- CONTENT OF THE PAGE -->
     <div class="content">
         <h1>Engineering</h1>
-        <p class="content">Content here</p>
+        <p class="content engineering"></p>
     </div>
 
     <footer>
@@ -55,5 +43,56 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../script.js"></script>
+    <!-- BUILD ENTRYS -->
+    <script>
+    var folder = "../images/engineering/page";
+
+    $.ajax({
+        url: folder + "/files.txt",
+        success: function (data) {
+            var filenames_images = data.split("\n");
+            var side = "left";
+
+            for (var i = 0; i < filenames_images.length; i++) {
+
+                var imageUrl = folder + "/" + filenames_images[i].replace("\r", "");
+                var text_file_name = folder + "/" + filenames_images[i].replace("\r", "").replace(/\.(jpe?g|png|gif)$/, ".txt");
+
+                (function (currentImageUrl) {
+                    $.ajax({
+                        url: text_file_name,
+                        success: function (txtData) {
+                            var Text = txtData.trim().split("\n");
+                            if (side == "left") {
+                                $(".engineering.content").append("<div class='engineering entry'><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div></div>");
+                                side = "right";
+                            } else {
+                                $(".engineering.content").append("<div class='engineering entry'><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div></div>");
+                                side = "left";
+                            }
+                            
+                        },
+                        error: function (err) {
+                            console.error("Error loading .txt file:", err);
+                        }
+                    });
+                })(imageUrl);
+            }
+        },
+        error: function (err) {
+            console.error("Error loading files.txt:", err);
+        }
+    });
+    </script>
+    <style>
+        div.content {
+            margin-top: 90px;
+        }
+        @media screen and (max-width: 600px) {
+            div.content {
+                margin-top: 150px;
+            }
+        }
+    </style>
 </body>
 </html>
