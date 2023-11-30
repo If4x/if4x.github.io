@@ -1,4 +1,5 @@
 /* GALLERY ENTRIES */
+
 div.gallery.entry {
     margin: 0;
     padding: 10px 0 10px 0;
@@ -21,10 +22,42 @@ div.gallery.entry div.text-container {
     align-items: center;
 }
 
-p.content.gallery {
-    padding: 0 5% 0 0;
+
+
+
+/* CARD DESIGN */
+
+.gallery-card {
+    display: flex row;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    /* border: solid 1px var(--text); */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.288);
+    border-top: solid 1px rgba(255, 255, 255, 0.1);
+    border-left: solid 1px rgba(255, 255, 255, 0.2);
+
+}
+.gallery-card-text {
+    padding: 0;
     margin: 0;
-  }
+}
+
+.gallery-card img {
+    width: 100%;
+    max-height: 500px;
+    border-radius: 20px;
+    border: solid 1px transparent;
+    object-fit: cover;
+    object-position: center;
+}
+
 
 
 /* MEDIA QUERIES */

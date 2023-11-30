@@ -1,7 +1,15 @@
+/* COLORS */
+:root {
+  --text : #FFFCF2;
+  --text-hover : #CDCAC2;
+}
+
+
 /* WHOLE HTML */
 body {
-  background-color: #000000;
-  color: #fffcf2ff;
+  background-image:radial-gradient(100% 69.5% at 44% 98%, #d69e2e 5%, rgba(220, 169, 53, 0.75) 28.75%, rgba(225, 179, 60, 0.5) 52.5%, rgba(236, 201, 75, 0) 100%), linear-gradient(90deg, #ff1499 0%, #ea05d0 33.33%, #0e71fb 100%);
+  background-attachment: fixed;
+  color: var(--text);
   font-family: 'Playfair Display', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -25,56 +33,53 @@ nav {
   /* background-color: red; */
   z-index: 10;
   position: fixed;
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  backdrop-filter: blur(5px);
   margin: 0;
   padding: 0px;
   height: 90px;
-  background-color: #000000;
-  box-shadow: 0px -5px 10px 0px #fffcf2ff;  
+  box-shadow: 0px -5px 20px 0px rgba(255, 255, 255, 0.288);  
 }
 nav.index-nav {
   height: 90px;
   width: 100%;
 }
 ul.header {
+  z-index: 10;
   list-style-type: none;
   margin: 0;
   padding: 10px;
   text-align: center;
 }
 li {
-  color: #fffcf2ff;
+  color: var(--text);
   margin: 0;
   padding: 25px 0 50px 0;
   display: inline-block;
 }
 
 li a {
-  color: #fffcf2ff;
+  color: var(--text);
   text-decoration: none;
   padding: 5px;
-  border: 1px solid #000000;
+  border: 1px solid transparent;
 }
 
 li.header a:hover { 
-  color: rgb(168, 166, 160)
+  border-radius: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.288);
 }
+
 li.logo:hover a {
-  border-radius: 0px;
-  border: 1px solid #000000;
+  border: 1px solid transparent;
 }
 li.logo {
   float: left;
   padding: 5px 0 0 10px;
 }
-li.header:after {
-  content: " | ";
-}
-li.header.big-display:nth-child(6):after {
-  content: "";
-}
-li.logo:after {
-  content: "";
-}
+
 
 
 
@@ -121,7 +126,7 @@ li.logo:after {
 }
 .column:hover a {
   text-decoration: none;
-  color: #fffcf2ff;
+  color: var(--text);
   /* make it slowly appear */
   transition: color 1s ease;
 }
@@ -157,7 +162,7 @@ footer {
     margin-top: auto;
     text-align: center;
     font-size: 12px;
-    border-top: 1px solid #fffcf2ff;
+    border-top: 1px solid var(--text);
     padding: 0px;
 }
 

@@ -1,3 +1,3 @@
 Image of PCB in CAD program
 PCB CAD Design
-A while ago I started to teach myself how to create myself custom PCBs fro future projects.<br>This PCB is for a small project where I wanted to adress an unlimited amount of relays and adress them over a shift register (SN74HC595).<br>Evey PCB represents a module for a module of 8 relays that just needs to be pluged in without any more actions requiered.
+A while ago I started to teach myself how to create myself custom PCBs for future projects.<br>This PCB is for a small project where I wanted to adress an unlimited amount of relays and adress them over a shift register (SN74HC595).<br>Evey PCB represents a module for a module of 8 relays that just needs to be pluged in without any more actions requiered.

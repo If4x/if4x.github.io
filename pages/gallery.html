@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="../gallery.css">
 </head>
 <body>
-
-
     <!-- NAV -->
     <nav class="index-nav">
         <ul class="header">
@@ -33,9 +31,9 @@
     </nav>
 
     <!-- CONTENT OF THE PAGE -->
-    <div class="content">
+    <div class="content content-container">
         <h1>Photography</h1>
-        <p class="content gallery">All images displayed here are subject to copyright.<br>&copy; 2023 Imanuel Fehse</p>
+        <p class="content gallery">All images displayed here are subject to copyright.<br>&copy; 2023 Imanuel Fehse<br>&zwnj;</p>
     </div>
 
     <footer>
@@ -46,35 +44,44 @@
     <!-- BUILD ENTRYS -->
     <script>
     var folder = "../images/photography/page";
-
     $.ajax({
         url: folder + "/files.txt",
         success: function (data) {
             var filenames_images = data.split("\n");
 
             for (var i = 0; i < filenames_images.length; i++) {
-                var imageUrl = folder + "/" + filenames_images[i].replace("\r", "");
-                var text_file_name = folder + "/" + filenames_images[i].replace("\r", "").replace(/\.(jpe?g|png|gif)$/, ".txt");
+                (function (index) {
+                    var imageUrl = folder + "/" + filenames_images[index].replace("\r", "");
+                    var text_file_name = folder + "/" + filenames_images[index].replace("\r", "").replace(/\.(jpe?g|png|gif)$/, ".txt");
 
-                // Use a closure to capture the current imageUrl
-                (function (currentImageUrl) {
                     $.ajax({
                         url: text_file_name,
                         success: function (txtData) {
                             var Text = txtData.trim().split("\n");
-                            $(".gallery.content").append("<div class='gallery entry'><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div></div>");
+                            $(".gallery.content").append("<div class='gallery-card'><div class='image-container'><img class='gallery-card-image' src='" + imageUrl + "' alt='" + Text[0] + "'></div><div class='description'><h2 class='gallery-card-title'>" + Text[1] + "</h2><p class='gallery-card-text'>" + Text[2] + "</p></div></div>");
                         },
                         error: function (err) {
                             console.error("Error loading .txt file:", err);
                         }
                     });
-                })(imageUrl);
+                })(i);
             }
         },
         error: function (err) {
             console.error("Error loading files.txt:", err);
         }
-    });
+});
+    </script>
+    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <script>
+        $(document).ready(function () {
+            VanillaTilt.init(document.querySelectorAll(".gallery-card"), {
+                max: 5,
+                speed: 400,
+                glare: true,
+                "max-glare": 0.2,
+            });
+        });
     </script>
     <style>
         div.content {

@@ -64,10 +64,10 @@
                         success: function (txtData) {
                             var Text = txtData.trim().split("\n");
                             if (side == "left") {
-                                $(".engineering.content").append("<div class='engineering entry'><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div></div>");
+                                $(".engineering.content").append("<div class='engineering entry " + side + "'><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div></div>");
                                 side = "right";
                             } else {
-                                $(".engineering.content").append("<div class='engineering entry'><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div></div>");
+                                $(".engineering.content").append("<div class='engineering entry " + side + "'><div class='text-container'><h2>" + Text[1] + "</h2><p>" + Text[2] + " </p></div><div class='image-container'><img src=" + currentImageUrl + " alt=" + Text[0] + "></div></div>");
                                 side = "left";
                             }
                             
