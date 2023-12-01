@@ -4,17 +4,13 @@
     --text-hover : #CDCAC2;
   }
   
-  *{
-    padding: 0;
-    margin: 0;
-  }
   
   /* WHOLE HTML */
   body {
     background-image:radial-gradient(100% 69.5% at 44% 98%, #d69e2e 5%, rgba(220, 169, 53, 0.75) 28.75%, rgba(225, 179, 60, 0.5) 52.5%, rgba(236, 201, 75, 0) 100%), linear-gradient(90deg, #ff1499 0%, #ea05d0 33.33%, #0e71fb 100%);
     background-attachment: fixed;
     color: var(--text);
-    font-family: 'Playfair Display', sans-serif;
+    font-family: "opem-sans", sans-serif;
     font-weight: 500;
     font-size: 16px;
     margin: 0;
@@ -153,9 +149,11 @@
   }
   
   h2 {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
     padding: 0;
   }
   
