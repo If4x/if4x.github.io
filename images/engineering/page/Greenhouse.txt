@@ -1,3 +1,0 @@
-Picture of fully automated greenhouse in small format.
-Fully Automated Greenhouse
-I developed this small greenhouse for people who like plants but have the problem that their plants are constantly dying because they are not cared for enough. The greenhouse automatically regulates the temperature, humidity and lighting of the plant in it. In addition, it monitors the soil moisture and notifies you as soon as the plant needs watering. Ideal for people who don't have much time or don't want to look after the plant.

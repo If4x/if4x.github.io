@@ -4,57 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imanuel Fehse</title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="images/logo_white.svg" type="image/x-icon">
-
+    <link rel="shortcut icon" href="src/images/logo_white.svg" type="image/x-icon">
 </head>
 <body>
-    <nav class="index-nav">
-        <ul class="header">
-            <!-- Big screen -->
-            <li class="logo big-display"><a href="index.html"><img src="images/logo_white.svg" alt="Logo" height="60px"></a></li>
-            <li class="header big-display"><a class="active" href="index.html">Home</a></li>
-            <li class="header big-display"><a href="pages/gallery.html">Photography</a></li>
-            <li class="header big-display"><a href="pages/coding.html">Coding</a></li>
-            <li class="header big-display"><a href="pages/engineering.html">Engineering</a></li>
-            <li class="header big-display "><a href="pages/about.html">About Me</a></li>
-
-            <!-- Small screen -->
-            <li class="logo samll-display"><a href="index.html"><img src="images/logo_white.svg" alt="Logo" height="60px"></a></li>
-            <li class="header samll-display"><a class="active" href="index.html">Home</a></li>
-            <li class="header samll-display"><a href="pages/gallery.html">Photography</a></li>
-            <li class="header samll-display"><a href="pages/coding.html">Coding</a></li>
-            <li class="header samll-display"><a href="pages/engineering.html">Engineering</a></li>
-            <li class="header samll-display "><a href="pages/about.html">About Me</a></li>
-        </ul>
-    </nav>
-
-    <!-- 3 column section -->
-    <div class="row">
-        <div class="column left zoom">
-            <img src="images/coding/coding_index.jpg" alt="Picture of a screen displaying html code" height="250px">
-            <p class="description"></p>
+    <header>
+        <!-- holds navigation -->
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="src/images/logo_white.svg" alt="Logo"></a>
+                <div class="nav-toggle" id="navToggle">
+                    <!--  nav toggle -->
+                    <img id="hamburger-menu" class="nav-icon" src="src/icons/hamburger_menu.svg" alt="hamburger menu">
+                    <img class="nav-icon hidden" src="src/icons/close.svg" alt="close hamburger menu">
+                </div>
+            </div>
+            <nav>
+                <!-- Links to pages -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="src/pages/gallery.html">Photography</a></li>
+                    <li><a href="src/pages/coding.html">Coding</a></li>
+                    <li><a href="src/pages/engineering.html">Engineering</a></li>
+                    <li><a href="src/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="column middle zoom">
-            <img src="images/photography/Wake_Up.jpg" alt="Image of a person, water dropping in their face. This artwork is calles 'Wake Up!'" height="250px">
-            <p class="description"></a></p>
-        </div>
-        <div class="column right zoom">
-            <img src="images/engineering/engineering index.png" alt="Picture of 3D PCS ind CAD Programm" height="250px">
-            <p class="description"></p>
-        </div>
-    </div>
+    </header>
 
+    <h1 class="tracking-in-contract">WELCOME</h1>
     <div class="content typewriter">
-        <h1>WELCOME</h1>
         <p class="content typewriter-text"></p>
     </div>
 
     <footer>
-        <p><img src="../images/logo_white.svg" alt="Logo" height="10px"> &copy; Imanuel Fehse | 2023</p>
+        <p><img src="src/images/logo_white.svg" alt="Logo" height="10px"> &copy; Imanuel Fehse | 2023</p>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="js/typewirter_effect.js"></script>
+    <script src="src/js/typewirter_effect.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

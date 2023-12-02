@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450.05 390.48">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Home">
+    <g id="Roof">
+      <rect class="cls-1" x="-38.69" y="93.66" width="339.2" height="75" rx="37.5" ry="37.5" transform="translate(-54.4 130.98) rotate(-45)"/>
+      <rect class="cls-1" x="281.64" y="-38.69" width="75" height="339.2" rx="37.5" ry="37.5" transform="translate(.91 264.01) rotate(-45)"/>
+    </g>
+    <g id="House_Body" data-name="House Body">
+      <path class="cls-1" d="m75.03,153.48h300v199.5c0,20.7-16.8,37.5-37.5,37.5H112.53c-20.7,0-37.5-16.8-37.5-37.5v-199.5h0Z"/>
+      <rect class="cls-1" x="138.03" y="82.48" width="174" height="107"/>
+    </g>
+  </g>
+</svg>

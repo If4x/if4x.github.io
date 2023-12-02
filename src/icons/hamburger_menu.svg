@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 325">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 0px;
+      }
+    </style>
+  </defs>
+  <g id="Hamburger_Menu" data-name="Hamburger Menu">
+    <rect class="cls-1" y="125" width="450" height="75" rx="37.5" ry="37.5"/>
+    <rect class="cls-1" x="0" y="0" width="450" height="75" rx="37.5" ry="37.5"/>
+    <rect class="cls-1" y="250" width="450" height="75" rx="37.5" ry="37.5"/>
+  </g>
+</svg>

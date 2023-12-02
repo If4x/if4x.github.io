@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imanuel Fehse</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/gallery.css">
+    <link rel="shortcut icon" href="../images/logo_white.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="src/images/logo_white.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <!-- holds navigation -->
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="../../index.html"><img src="../images/logo_white.svg" alt="Logo"></a>
+                <div class="nav-toggle" id="navToggle">
+                    <!--  nav toggle -->
+                    <img id="hamburger-menu" class="nav-icon" src="../icons/hamburger_menu.svg" alt="hamburger menu">
+                    <img class="nav-icon hidden" src="../icons/close.svg" alt="close hamburger menu">
+                </div>
+            </div>
+            <nav>
+                <!-- Links to pages -->
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="gallery.html">Photography</a></li>
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="engineering.html">Engineering</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTENT OF THE PAGE -->
+    <div class="content content-container">
+        <h1 class="tracking-in-contract">Photography</h1>
+        <p class="content gallery">All images displayed here are subject to copyright.<br>&copy; 2023 Imanuel Fehse<br>&zwnj;</p>
+    </div>
+
+    <footer>
+        <p><img src="../images/logo_white.svg" alt="Logo" height="10px"> &copy; Imanuel Fehse | 2023</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="../script.js"></script>
+    <!-- BUILD ENTRYS -->
+    <script>
+        var folder = "../images/photography/page";
+        $.ajax({
+            url: folder + "/files.txt",
+            success: function (data) {
+                var filenames_images = data.split("\n");
+
+                for (var i = 0; i < filenames_images.length; i++) {
+                    (function (index) {
+                        var imageUrl = folder + "/" + filenames_images[index].replace("\r", "");
+                        var text_file_name = folder + "/" + filenames_images[index].replace("\r", "").replace(/\.(jpe?g|png|gif)$/, ".txt");
+
+                        $.ajax({
+                            url: text_file_name,
+                            success: function (txtData) {
+                                var Text = txtData.trim().split("\n");
+                                $(".gallery.content").append("<div class='gallery-card'><div class='image-container'><img class='gallery-card-image' src='" + imageUrl + "' alt='" + Text[0] + "'></div><div class='description'><h2 class='gallery-card-title'>" + Text[1] + "</h2><p class='gallery-card-text'>" + Text[2] + "</p></div></div>");
+                            },
+                            error: function (err) {
+                                console.error("Error loading .txt file:", err);
+                            }
+                        });
+                    })(i);
+                }
+            },
+            error: function (err) {
+                console.error("Error loading files.txt:", err);
+            }
+        });
+    </script>
+    <script src="../js/main.js"></script>
+</body>
+</html>
