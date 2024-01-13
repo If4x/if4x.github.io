@@ -46,10 +46,10 @@ header {
   padding: 0 1rem;
 }
 .logo-container { 
-  padding: 1rem 0;;
+  padding: 0.2 0;
 }
 .logo-container img {
-  height: 3rem;
+  height: 5rem;
 }
 ul {
   padding: 0;

@@ -1,16 +1,24 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169.7 203">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: url(#linear-gradient);
-        stroke-width: 0px;
-      }
-    </style>
-    <linearGradient id="linear-gradient" x1="126.25" y1="173.32" x2="28.75" y2="4.44" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#000"/>
-      <stop offset="1" stop-color="#000"/>
-    </linearGradient>
-  </defs>
-  <path class="cls-1" d="m35,147H0L46,0h35l-46,147Zm124.7-57.78l10-33-48.7-.22-.61,1.44.45-1.44h-35l-46,147h35l28.06-89.67-13.4,33.17,52.05-.69,10-33-48.55.19,7.51-23.99,49.19.21Z"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;stroke:#000000;stroke-miterlimit:10;}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;}
+</style>
+<rect x="-51.3" y="-57.3" class="st0" width="585.6" height="577.2"/>
+<g id="Logo-2">
+	<g id="Logo-3">
+		<path id="I" class="st1" d="M287.6,143.3c0,10.9-4.6,20.7-12,27.6L65.2,381.2l-2,2c-6.7,6.2-15.7,10-25.6,10
+			C16.8,393.3,0,376.5,0,355.7c0-10.9,4.6-20.7,12-27.6l210.4-210.4l2-2c6.7-6.2,15.7-10,25.5-10
+			C270.8,105.7,287.6,122.5,287.6,143.3L287.6,143.3z"/>
+		<path id="Higher_F" class="st1" d="M489,383.3c-14.7,14.7-38.5,14.7-53.1,0c-0.9-0.9-1.8-1.9-2.6-2.9l0-0.1L299,233.4l-0.4-0.4
+			c-14.7-14.7-14.7-38.5,0-53.1c14.7-14.7,38.5-14.7,53.1,0c0.9,0.9,1.8,1.9,2.6,2.9l0,0.1l134.2,147l0,0l0.4,0.4
+			C503.7,344.8,503.7,368.6,489,383.3L489,383.3z"/>
+		<path id="Lower_F" class="st1" d="M355.1,380.1c-14.7,14.7-38.5,14.7-53.1,0c-0.3-0.3-0.6-0.6-0.9-0.9L266.9,345
+			c-7.2-7.2-18.9-7.2-26.1,0l-35,35c-0.3,0.4-0.7,0.7-1,1c-14.7,14.7-38.5,14.7-53.1,0c-14.7-14.7-14.7-38.5,0-53.1
+			c0.3-0.3,0.7-0.7,1.1-1l73.1-73.1c0.3-0.4,0.7-0.7,1-1.1c14.7-14.7,38.5-14.7,53.1,0c0.3,0.3,0.6,0.6,0.9,0.9l73,72.1
+			c0.4,0.4,0.8,0.8,1.2,1.2C369.7,341.6,369.7,365.4,355.1,380.1L355.1,380.1z"/>
+	</g>
+</g>
 </svg>
