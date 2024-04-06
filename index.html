@@ -8,45 +8,31 @@
     <link rel="stylesheet" href="src/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="src/images/logo_white.svg" type="image/x-icon">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 <body>
     <header>
-        <!-- holds navigation -->
-        <div class="header-container">
-            <div class="logo-container">
-                <a href="index.html"><img src="src/images/logo_white.svg" alt="Logo"></a>
-                <div class="nav-toggle" id="navToggle">
-                    <!--  nav toggle -->
-                    <img id="hamburger-menu" class="nav-icon" src="src/icons/hamburger_menu.svg" alt="hamburger menu">
-                    <img class="nav-icon hidden" src="src/icons/close.svg" alt="close hamburger menu">
-                </div>
-            </div>
-            <nav>
-                <!-- Links to pages -->
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="src/pages/gallery.html">Photography</a></li>
-                    <li><a href="src/pages/coding.html">Coding</a></li>
-                    <li><a href="src/pages/engineering.html">Engineering</a></li>
-                    <li><a href="src/pages/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div w3-include-html="src/elements/header.html"></div>
     </header>
+
 
     <div class="card">
         <h1 class="index-title text-focus-in">Welcome <br>Välkommen <br>Wilkommmen <br>Benvenuto <br>Witaj</h1>
-        <img src="src/images/index/titel_image_new.svg" alt="Abstract Art">
+        <img src="src/images/index/titel_image_new.svg" alt="Abstract line art">
     </div>
     <div class="content typewriter">
         <p class="content typewriter-text"></p>
     </div>
 
     <footer>
-        <p>&copy; Imanuel Fehse | 2024</p>
+        <div w3-include-html="src/elements/footer.html"></div>
     </footer>
+
+    <script async>w3.includeHTML();</script>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="src/js/typewirter_effect.js"></script>
-    <script src="src/js/main.js"></script>
+    <script defer src="src/js/main.js"></script>
+    
 </body>
 </html>

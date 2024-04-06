@@ -49,7 +49,8 @@ header {
   padding: 0.2 0;
 }
 .logo-container img {
-  height: 5rem;
+  height: 3rem;
+  padding: 1rem;
 }
 ul {
   padding: 0;

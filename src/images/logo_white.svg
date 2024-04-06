@@ -1,24 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 28.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 500 500" style="enable-background:new 0 0 500 500;" xml:space="preserve">
-<style type="text/css">
+
+<svg
+   version="1.1"
+   id="Logo"
+   x="0px"
+   y="0px"
+   viewBox="0 0 500.01254 288.625"
+   xml:space="preserve"
+   sodipodi:docname="Imanuel Fehse Logo white.svg"
+   width="500.01254"
+   height="288.625"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs14" /><sodipodi:namedview
+   id="namedview12"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="true"
+   inkscape:deskcolor="#d1d1d1"
+   showgrid="false"
+   inkscape:zoom="0.472"
+   inkscape:cx="141.94915"
+   inkscape:cy="145.12712"
+   inkscape:window-width="1440"
+   inkscape:window-height="830"
+   inkscape:window-x="-6"
+   inkscape:window-y="-6"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Logo" />
+<style
+   type="text/css"
+   id="style2">
 	.st0{display:none;stroke:#000000;stroke-miterlimit:10;}
 	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
 </style>
-<rect x="-51.3" y="-57.3" class="st0" width="585.6" height="577.2"/>
-<g id="Logo-2">
-	<g id="Logo-3">
-		<path id="I" class="st1" d="M287.6,143.3c0,10.9-4.6,20.7-12,27.6L65.2,381.2l-2,2c-6.7,6.2-15.7,10-25.6,10
-			C16.8,393.3,0,376.5,0,355.7c0-10.9,4.6-20.7,12-27.6l210.4-210.4l2-2c6.7-6.2,15.7-10,25.5-10
-			C270.8,105.7,287.6,122.5,287.6,143.3L287.6,143.3z"/>
-		<path id="Higher_F" class="st1" d="M489,383.3c-14.7,14.7-38.5,14.7-53.1,0c-0.9-0.9-1.8-1.9-2.6-2.9l0-0.1L299,233.4l-0.4-0.4
-			c-14.7-14.7-14.7-38.5,0-53.1c14.7-14.7,38.5-14.7,53.1,0c0.9,0.9,1.8,1.9,2.6,2.9l0,0.1l134.2,147l0,0l0.4,0.4
-			C503.7,344.8,503.7,368.6,489,383.3L489,383.3z"/>
-		<path id="Lower_F" class="st1" d="M355.1,380.1c-14.7,14.7-38.5,14.7-53.1,0c-0.3-0.3-0.6-0.6-0.9-0.9L266.9,345
-			c-7.2-7.2-18.9-7.2-26.1,0l-35,35c-0.3,0.4-0.7,0.7-1,1c-14.7,14.7-38.5,14.7-53.1,0c-14.7-14.7-14.7-38.5,0-53.1
-			c0.3-0.3,0.7-0.7,1.1-1l73.1-73.1c0.3-0.4,0.7-0.7,1-1.1c14.7-14.7,38.5-14.7,53.1,0c0.3,0.3,0.6,0.6,0.9,0.9l73,72.1
-			c0.4,0.4,0.8,0.8,1.2,1.2C369.7,341.6,369.7,365.4,355.1,380.1L355.1,380.1z"/>
+<rect
+   x="-51.299999"
+   y="-163"
+   class="st0"
+   width="585.59998"
+   height="577.20001"
+   id="rect4" />
+<g
+   id="Logo-2"
+   transform="translate(0,-105.7)">
+	<g
+   id="Logo-3">
+		<path
+   id="I"
+   class="st1"
+   d="m 287.6,143.3 c 0,10.9 -4.6,20.7 -12,27.6 l -210.4,210.3 -2,2 c -6.7,6.2 -15.7,10 -25.6,10 C 16.8,393.3 0,376.5 0,355.7 0,344.8 4.6,335 12,328.1 l 210.4,-210.4 2,-2 c 6.7,-6.2 15.7,-10 25.5,-10 20.9,0 37.7,16.8 37.7,37.6 z" />
+		<path
+   id="Higher_F"
+   class="st1"
+   d="m 489,383.3 c -14.7,14.7 -38.5,14.7 -53.1,0 -0.9,-0.9 -1.8,-1.9 -2.6,-2.9 v -0.1 L 299,233.4 298.6,233 c -14.7,-14.7 -14.7,-38.5 0,-53.1 14.7,-14.7 38.5,-14.7 53.1,0 0.9,0.9 1.8,1.9 2.6,2.9 v 0.1 l 134.2,147 v 0 l 0.4,0.4 c 14.8,14.5 14.8,38.3 0.1,53 z" />
+		<path
+   id="Lower_F"
+   class="st1"
+   d="m 355.1,380.1 c -14.7,14.7 -38.5,14.7 -53.1,0 -0.3,-0.3 -0.6,-0.6 -0.9,-0.9 L 266.9,345 c -7.2,-7.2 -18.9,-7.2 -26.1,0 l -35,35 c -0.3,0.4 -0.7,0.7 -1,1 -14.7,14.7 -38.5,14.7 -53.1,0 -14.7,-14.7 -14.7,-38.5 0,-53.1 0.3,-0.3 0.7,-0.7 1.1,-1 l 73.1,-73.1 c 0.3,-0.4 0.7,-0.7 1,-1.1 14.7,-14.7 38.5,-14.7 53.1,0 0.3,0.3 0.6,0.6 0.9,0.9 l 73,72.1 c 0.4,0.4 0.8,0.8 1.2,1.2 14.6,14.7 14.6,38.5 0,53.2 z" />
 	</g>
 </g>
 </svg>

@@ -1,6 +1,6 @@
 // TYPEWRITER EFFECT
 
-var content = "My name is Imanuel. I'm a student and like to share my work. I'm mainly interested in photography, coding and engineering. On this website you can find some of my work in these areas.\nI hope you enjoy looking at them.";
+var content = "Hey there, my name is Imanuel!\nI'm a self-taught student that likes to share his work with others. I'm mainly interested in photography, coding, engineering and scientific research. On this website you can find some of my work in these areas.\nI hope you enjoy looking at them.";
 var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
 var delay = 1000; //ms
 

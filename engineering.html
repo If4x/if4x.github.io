@@ -4,36 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imanuel Fehse</title>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/engineering.css">
-    <link rel="shortcut icon" href="../images/logo_white.svg" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/engineering.css">
     <link rel="shortcut icon" href="src/images/logo_white.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="src/images/logo_white.svg" type="image/x-icon">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
 </head>
 
 <body>
     <header>
-        <!-- holds navigation -->
-        <div class="header-container">
-            <div class="logo-container">
-                <a href="../../index.html"><img src="../images/logo_white.svg" alt="Logo"></a>
-                <div class="nav-toggle" id="navToggle">
-                    <!--  nav toggle -->
-                    <img id="hamburger-menu" class="nav-icon" src="../icons/hamburger_menu.svg" alt="hamburger menu">
-                    <img class="nav-icon hidden" src="../icons/close.svg" alt="close hamburger menu">
-                </div>
-            </div>
-            <nav>
-                <!-- Links to pages -->
-                <ul>
-                    <li><a href="../../index.html">Home</a></li>
-                    <li><a href="gallery.html">Photography</a></li>
-                    <li><a href="coding.html">Coding</a></li>
-                    <li><a href="engineering.html">Engineering</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        <div w3-include-html="src/elements/header.html"></div>
     </header>
+
 
     <!-- CONTENT OF THE PAGE -->
     <div class="content">
@@ -42,14 +24,15 @@
     </div>
 
     <footer>
-        <p>&copy; Imanuel Fehse | 2024</p>
+        <div w3-include-html="src/elements/footer.html"></div>
     </footer>
+
+    <script async>w3.includeHTML();</script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="../script.js"></script>
 
     <!-- BUILD ENTRYS -->
     <script>
-    var folder = "../images/engineering/page";
+    var folder = "src/images/engineering/page";
     $.ajax({
         url: folder + "/files.txt",
         success: function (data) {
@@ -80,6 +63,7 @@
         }
     });
     </script>
-    <script src="../js/main.js"></script>
+    
+    <script defer src="src/js/main.js"></script>
 </body>
 </html>
