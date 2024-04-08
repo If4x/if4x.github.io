@@ -13,6 +13,7 @@ navToggle.addEventListener('click', () => {
     });
 });
 
+
 window.addEventListener('resize', () => {
     if (window.innerWidth > 800) {
         nav.classList.remove("open");

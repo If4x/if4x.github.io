@@ -13,7 +13,26 @@
 
 <body>
     <header>
-        <div w3-include-html="src/elements/header.html"></div>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html"><img src="src/images/logo_white.svg" alt="Logo"></a>
+                <div class="nav-toggle" id="navToggle">
+                    <!--  nav toggle -->
+                    <img id="hamburger-menu" class="nav-icon" src="src/icons/hamburger_menu.svg" alt="hamburger menu">
+                    <img class="nav-icon hidden" src="src/icons/close.svg" alt="close hamburger menu">
+                </div>
+            </div>
+            <nav>
+                <!-- Links to pages -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="gallery.html">Photography</a></li>
+                    <li><a href="coding.html">Coding</a></li>
+                    <li><a href="engineering.html">Engineering</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
 
